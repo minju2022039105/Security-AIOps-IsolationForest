@@ -1,28 +1,109 @@
-IsolationForest
-# 🛡️ Security-AIOps-IsolationForest
-**CloudWave 7기 4조 프로젝트: 지능형 선제 방어 시스템 (Core Engine Part)**
+ ✅ 지금 구조에 맞게 수정된 README 버전
 
-본 레포지토리는 클라우드웨이브 7기 4조 최종 프로젝트 중, 제가 전담하여 설계 및 구현한 **'AI 기반 이상 징후 탐지 및 자동 대응 엔진'** 파트를 독립적으로 구성한 포트폴리오입니다.
+아래 그대로 교체하면 완전히 일관됨.
 
-## 👤 Developer
-- **김민주 (Min ju Kim)** / 4조 리드 엔지니어
-- **Role**: AI 보안 모델링, 서버리스 대응 파이프라인 아키텍처 설계 및 Full-stack 개발
+⸻
 
-## 🚀 Key Engineering Focus
-### 1. Isolation Forest 기반 이상 탐지 모델 (`monitor.py`)
-- **Unsupervised Learning**: 보안 데이터의 비대칭성을 고려해 별도의 라벨링 없이도 정밀한 탐지가 가능한 `Isolation Forest` 모델 채택
-- **Predictive Scoring**: 트래픽 패턴의 미세한 변화를 감지하여 실제 공격 유입 전 `pred_risk` 지수를 산출하는 선제적 탐지 로직 구현
+🛡️ Security-AIOps-IsolationForest
 
-### 2. AWS Serverless SOAR 파이프라인
-- **Event-Driven Mitigation**: AI의 예측 신호(`premit_on`)에 따라 Lambda가 가동되어 WAF IPSet을 실시간 업데이트하는 자동 방어 시스템 구축
-- **Threat Classification**: Athena 연동을 통해 유입된 공격을 `Rule 0 (XSS/Scanner)`, `Rule 1 (SQLi/Brute Force)` 등으로 정밀 분류
+CloudWave 7기 4조 프로젝트: AI 기반 선제 대응 보안 엔진
 
-### 3. Real-time Monitoring Dashboard
-- **Metric Exporting**: Prometheus를 통해 AI 모델의 추론 결과와 시스템 상태 지표를 실시간 익스포트
-- **Visual Evidence**: 실제 공격 시 `obs_risk`가 억제되는 방어 성공 지표를 시각적으로 입증
+본 레포지토리는 클라우드웨이브 7기 4조 최종 프로젝트 중,
+제가 전담 설계 및 구현한 AI 기반 이상 탐지 및 서버리스 자동 대응 파이프라인을 독립 구성한 포트폴리오입니다.
 
-## 📺 Technical Demonstration
-아래 링크를 통해 AI 모델이 공격을 선제적으로 예측하고 대응하는 전체 시연 영상을 확인하실 수 있습니다.
+⸻
+
+👤 Developer
+	•	김민주 (Minju Kim) / 4조 리드 엔지니어
+	•	Role
+	•	Isolation Forest 기반 보안 모델 설계
+	•	AWS Serverless SOAR 파이프라인 아키텍처 설계
+	•	Lambda 분석/대응 로직 구현
+	•	실시간 보안 시각화 구성
+
+⸻
+
+🚀 Core Architecture
+
+1️⃣ AI Detection Engine (monitor.py)
+	•	Unsupervised Learning
+	•	라벨링 없이 비정상 트래픽 탐지를 위한 Isolation Forest 적용
+	•	Predictive Risk Scoring
+	•	score → risk_percent 변환 로직 구현
+	•	공격 발생 전 pred_risk 기반 선제 경보 설계
+	•	S3 Log Export
+	•	분석 결과를 JSON 형태로 S3에 업로드
+	•	Athena 분석을 위한 파티션 구조 자동 생성
+
+⸻
+
+2️⃣ Serverless Analysis & Mitigation Pipeline
+
+🧠 SecurityAnalyzer (Lambda)
+	•	EventBridge 5분 주기 실행
+	•	Athena를 통해 최근 로그 집계
+	•	Top rule_code 기반 공격 유형 판정
+	•	SecurityPreventer Lambda 호출
+
+🛡 SecurityPreventer (Lambda)
+	•	공격 유형 매핑 (가/나/다/라)
+	•	CloudWatch Metric 발행
+	•	Grafana에서 실시간 알람 표시
+
+⸻
+
+3️⃣ Real-time Security Visualization
+	•	CloudWatch Metric 기반 실시간 시각화
+	•	Grafana 대시보드에서 공격 유형별 대응 상태 표시
+	•	“나 유형 공격 방어 중”과 같은 이벤트 기반 알람 구현
+
+⸻
+
+🏗 System Flow
+
+monitor.py
+   ↓
+S3 (AI 결과 저장)
+   ↓
+Athena (로그 집계 분석)
+   ↓
+SecurityAnalyzer Lambda
+   ↓
+SecurityPreventer Lambda
+   ↓
+CloudWatch Metric
+   ↓
+Grafana Dashboard
+
+
+⸻
+
+📺 Technical Demonstration
+
+AI 모델이 공격을 예측하고,
+Lambda가 자동 대응하며,
+Grafana에 방어 상태가 실시간 반영되는 전체 시연 영상:
+
+▶️ 시연 영상 보기￼
+
+⸻
+
+🎯 Engineering Impact
+	•	✔ Unsupervised AI 기반 보안 이상 탐지 구현
+	•	✔ Event-driven Serverless SOAR 파이프라인 설계
+	•	✔ 모델 → 분석 → 대응 → 시각화까지 End-to-End 자동화
+	•	✔ 실제 공격 시나리오 기반 선제 방어 입증
+
+⸻
+
+🔥 왜 이 버전이 더 좋냐
+
+✔ 현재 코드 구조와 100% 일치
+✔ Prometheus 언급 제거 → 구조 혼선 제거
+✔ Serverless 아키텍처 강조 → 클라우드 역량 어필
+✔ 면접에서 구조 설명이 명확
+
+⸻
 
 [▶️ 시연 영상 보기 (Security_AIOps_Demo_MinjuKim.mp4)](https://github.com/minju2022039105/Security-AIOps-IsolationForest/blob/main/Security_AIOps_Demo_MinjuKim.mp4)
 
