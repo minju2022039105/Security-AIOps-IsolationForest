@@ -89,17 +89,7 @@ Grafana에 방어 상태가 실시간 반영되는 전체 시연 영상:
 	•	✔ Unsupervised AI 기반 보안 이상 탐지 구현
 	•	✔ Event-driven Serverless SOAR 파이프라인 설계
 	•	✔ 모델 → 분석 → 대응 → 시각화까지 End-to-End 자동화
-	•	✔ 실제 공격 시나리오 기반 선제 방어 입증
-
-⸻
-
-🔥 왜 이 버전이 더 좋냐
-
-✔ 현재 코드 구조와 100% 일치
-✔ Prometheus 언급 제거 → 구조 혼선 제거
-✔ Serverless 아키텍처 강조 → 클라우드 역량 어필
-✔ 면접에서 구조 설명이 명확
-
+	•	✔ 실제 공격 시나리오 기반 선제 방어 
 ⸻
 
 [▶️ 시연 영상 보기 (Security_AIOps_Demo_MinjuKim.mp4)](https://github.com/minju2022039105/Security-AIOps-IsolationForest/blob/main/Security_AIOps_Demo_MinjuKim.mp4)
