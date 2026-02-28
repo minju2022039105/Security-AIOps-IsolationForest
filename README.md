@@ -21,6 +21,11 @@ IsolationForest
 - **Metric Exporting**: Prometheus를 통해 AI 모델의 추론 결과와 시스템 상태 지표를 실시간 익스포트
 - **Visual Evidence**: 실제 공격 시 `obs_risk`가 억제되는 방어 성공 지표를 시각적으로 입증
 
+## 📺 Technical Demonstration
+아래 링크를 통해 AI 모델이 공격을 선제적으로 예측하고 대응하는 전체 시연 영상을 확인하실 수 있습니다.
+
+[▶️ 시연 영상 보기 (Security_AIOps_Demo_MinjuKim.mp4)](https://github.com/minju2022039105/Security-AIOps-IsolationForest/blob/main/Security_AIOps_Demo_MinjuKim.mp4)
+
 ---
 *본 코드는 클라우드웨이브 7기 4조 프로젝트의 핵심 모듈로, 무단 도용을 금하며 인용 시 출처를 밝혀주시기 바랍니다.*
 
