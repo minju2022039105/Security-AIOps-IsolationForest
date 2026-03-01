@@ -46,6 +46,12 @@ AI 모델의 위험도 예측부터 Lambda의 자동 대응까지의 전 과정 
 👉 [**Full Simulation Video 보러가기**](https://github.com/minju2022039105/Security-AIOps-IsolationForest/blob/main/Security_AIOps_Demo_MinjuKim.mp4.mp4) 
 *(※ 9MB 이상의 파일로 모바일 환경에 따라 재생이 원활하지 않을 수 있습니다.)*
 
+AI 모델의 위험도 예측부터 Lambda의 자동 대응까지의 전 과정 시연 영상입니다.
+
+👉 Full Simulation Video 보러가기 (※ 9MB 이상의 파일로 모바일 환경에 따라 재생이 원활하지 않을 수 있습니다.)
+
+
+
 ---
 *© 2026 Minju Kim. 본 프로젝트의 아키텍처 설계와 핵심 로직 구현은 본인에게 소유권이 있습니다.*
 
