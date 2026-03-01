@@ -1,4 +1,4 @@
-<img width="1048" height="610" alt="image" src="https://github.com/user-attachments/assets/f245e8df-e3ce-4b8f-bfe4-0f257b992bad" /># Security-AIOps-IsolationForest
+# Security-AIOps-IsolationForest
 
 AI 기반 이상 탐지 모델(**Isolation Forest**)과 **AWS Serverless** 아키텍처를 결합하여
 <img width="1048" height="610" alt="image" src="https://github.com/user-attachments/assets/87668127-b43a-401a-9772-6836681551d0" />
