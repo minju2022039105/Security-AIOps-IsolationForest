@@ -34,9 +34,8 @@ AI 기반 이상 탐지 모델(**Isolation Forest**)과 **AWS Serverless** 아�
 - `lambda_security_preventer.py`: 실제 방어 및 대응 수행
 
 ## Data & Resources
-final_preprocessed_waf_data.csv: AI 모델 학습 및 초기 이상 탐지 테스트를 위해 정제된 학습용 데이터셋
-
-enriched_waf_data.json: 분석 과정에서 식별된 공격 패턴 및 부가 정보가 결합된 최종 가공 데이터
+- 'final_preprocessed_waf_data.csv': 'monitor.py'를 위해 정제된 학습용 데이터셋
+- 'enriched_waf_data.json': `lambda_security_analyzer.py` 과정에서 식별된 공격 패턴 및 부가 정보가 결합된 최종 가공 데이터
 ---
 
 ## 🎬 Demo Video
