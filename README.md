@@ -37,7 +37,7 @@ AI 기반 이상 탐지 모델(**Isolation Forest**)과 **AWS Serverless** 아�
 
 ## 🎬 Demo Video
 
-[![Demo Video](https://img.shields.io/badge/Demo-Watch%20Video-red?style=for-the-badge&logo=youtube)]https://youtu.be/VNAqdCOsqVg?si=ni_6LffDZZVUGLG8
+![Demo Video](https://img.shields.io/badge/Demo-Watch%20Video-red?style=for-the-badge&logo=youtube)https://youtu.be/VNAqdCOsqVg?si=ni_6LffDZZVUGLG8
 
 ---
 *© 2026 Minju Kim. 본 프로젝트의 아키텍처 설계와 핵심 로직 구현은 본인에게 소유권이 있습니다.*
