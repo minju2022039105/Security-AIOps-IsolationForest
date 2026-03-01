@@ -233,7 +233,7 @@ while True:
     MIT_LEVEL.set(float(level))
     ANOMALY_STATUS.set(float(anomaly))
 
-    # === [여기부터 추가] S3에 올릴 데이터 꾸러미 만들기 ===
+    # ===S3에 올릴 데이터들 만들기!!!! ===
     # CSV 샘플에서 IP 가져오기 (컬럼명이 'source_ip'라고 가정, 없으면 'unknown' 처리)
     latest_ip = sample['source_ip'].values[0] if 'source_ip' in sample.columns else "33.100.231.47"
 
@@ -256,3 +256,4 @@ while True:
     print(f"[{mode}] pred={pred_risk:.0f}% obs={obs_risk:.0f}% premit={1 if premit_on else 0} level={level} raw={raw_score:.4f}")
 
     time.sleep(TICK_SEC)
+
