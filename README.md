@@ -40,9 +40,6 @@
 
 ---
 
-## 📺 Technical Demo
-AI 모델의 위험도 예측부터 Lambda의 자동 대응까지의 전 과정 시연 영상입니다.
-
 ## 🎥 Full Simulation Video
 
 AI 모델의 위험도 예측부터 Lambda의 자동 대응까지의 전 과정 시연 영상입니다.
