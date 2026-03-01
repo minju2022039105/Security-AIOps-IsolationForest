@@ -10,7 +10,7 @@ AI 기반 이상 탐지 모델(**Isolation Forest**)과 **AWS Serverless** 아�
 ---
 
 ## Architecture Flow
-데이터 수집부터 시각화까지의 Full-Stack 파이프라인:
+데이터 수집~ 시각화 파이프라인:
 
 1. **Inference**: `monitor.py` (Isolation Forest 기반 실시간 탐지)
 2. **Storage**: **Amazon S3** (분석 결과 적재)
