@@ -1,8 +1,4 @@
 # Security-AIOps-IsolationForest
-
-AI 기반 이상 탐지 모델(**Isolation Forest**)과 **AWS Serverless** 아키텍처를 결합하여
-<img width="950" height="410" alt="image" src="https://github.com/user-attachments/assets/87668127-b43a-401a-9772-6836681551d0" />
-
 ---
 
 ## Developer
@@ -11,8 +7,7 @@ AI 기반 이상 탐지 모델(**Isolation Forest**)과 **AWS Serverless** 아�
 ---
 
 ## Architecture Flow
-데이터 수집~ 시각화 파이프라인:
-
+데이터 수집~ 시각화 파이프라인
 1. **Inference**: `monitor.py` (Isolation Forest 기반 실시간 탐지)
 2. **Storage**: **Amazon S3** (분석 결과 적재)
 3. **Analysis**: **Amazon Athena** (로그 구조화 및 쿼리 분석)
