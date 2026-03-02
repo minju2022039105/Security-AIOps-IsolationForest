@@ -5,8 +5,28 @@
 **김민주** (CloudWave 7기 4조)
 
 ---
-
 ## Architecture Flow
+
+## 1차: Edge Defence
+Route53 → CloudFront → WAF → ALB → EKS (진입구간 보호 + 1차 필터링/로깅)
+
+## 2차: Predictive AIOps
+    monitor.py → S3 → Athena → Grafana
+    obs_risk / pred_risk / premit_on 생성
+
+## 3차: 자동 대응 (SOAR)
+    CloudWatch Event
+        ↓
+    Analyzer Lambda
+        ↓
+    Athena S3 쿼리
+        ↓
+    Preventer Lambda
+        ├─ WAF IPSet 업데이트
+        └─ CloudWatch Metric 발행
+                ↓
+            Grafana 표시
+
 데이터 수집~ 시각화 파이프라인
 1. **Inference**: `monitor.py` (Isolation Forest 기반 실시간 탐지)
 2. **Storage**: **Amazon S3** (분석 결과 적재)
