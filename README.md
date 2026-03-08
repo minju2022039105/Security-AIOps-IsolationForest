@@ -6,6 +6,7 @@
 
 ---
 ## Architecture Flow
+![Uploading 스크린샷 2026-02-27 100128.png…]()
 
 ## 1차: Edge Defence
 Route53 → CloudFront → WAF → ALB → EKS (진입구간 보호 + 1차 필터링/로깅)
