@@ -6,7 +6,8 @@
 
 ---
 ## Architecture Flow
-![Uploading 스크린샷 2026-02-27 100128.png…]()
+<img width="1197" height="681" alt="스크린샷 2026-02-27 100128" src="https://github.com/user-attachments/assets/975e7f70-c9cc-43cb-b81d-8dd35cd06674" />
+
 
 ## 1차: Edge Defence
 Route53 → CloudFront → WAF → ALB → EKS (진입구간 보호 + 1차 필터링/로깅)
