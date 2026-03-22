@@ -9,8 +9,8 @@ import boto3  # 추가
 import json
 
 # S3 설정 (함수 바깥에 선언) 
-S3_BUCKET_NAME = "cloudwave-aiops-results" 
-s3_client = boto3.client('s3', region_name='ap-northeast-2')
+S3_BUCKET_NAME = "aws-waf-logs-minju-0417-project" 
+s3_client = boto3.client('s3', region_name='us-east-1')
 
 def upload_to_s3(data_dict):
     try:
