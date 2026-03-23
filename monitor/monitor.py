@@ -1,12 +1,16 @@
 import time
 import numpy as np
 import pandas as pd
+import os  # 추가
+import sys # 추가
 from datetime import datetime
 from sklearn.ensemble import IsolationForest
 from sklearn.preprocessing import StandardScaler
 from prometheus_client import start_http_server, Counter, Gauge
 import boto3  # 추가 
 import json
+
+os.chdir(os.path.dirname(os.path.abspath(__file__)))
 
 # S3 설정 (함수 바깥에 선언) 
 S3_BUCKET_NAME = "aws-waf-logs-minju-0417-project" 
@@ -30,7 +34,7 @@ def upload_to_s3(data_dict):
 # ==============================
 # 0) 설정
 # ==============================
-CSV_PATH = "final_preprocessed_waf_data.csv"
+CSV_PATH = "../data/final_preprocessed_waf_data.csv"
 FEATURES = ["country_code", "rule_code", "uri_len"]
 
 # 촬영용 타임라인(총 210초 ≈ 3분30초)
