@@ -108,6 +108,8 @@ Route53 → CloudFront (Origin Cloaking) → WAF v2 → ALB → EKS
 
 P0에서 해외 IP를 걸러낸 뒤, 국내 발신 공격은 P1~P3 Managed Rule이 탐지한다. SOAR에서 식별한 공격 IP는 P4에 자동 반영되어 이후 요청을 즉시 차단한다.
 
+![WAF Rules](assets/waf-rules.png)
+
 ### 설계 근거: 왜 Edge에서 먼저 차단하는가?
 
 WAF가 공격을 차단하면 요청은 EKS까지 전달되지 않는다. EKS는 Node 수에 비례하여 시간당 과금되므로, 악성 트래픽이 오토스케일링을 유발하기 전에 제거하는 것이 **비용과 가용성을 동시에 지키는 핵심 전략**이다.
@@ -167,6 +169,8 @@ if pred_risk > 70:
     premit_on = True
 ```
 
+![Grafana Table](assets/grafana-table.png)
+
 ---
 
 ## 5. Layer 3: SOAR Pipeline
@@ -216,6 +220,8 @@ def lambda_handler(event, context):
     return {"status": "success", "blocked_count": len(event['detected_ips'])}
 ```
 
+![Analyzer Query](assets/analyzer-query.png)
+
 ### 설계 근거: LGP Stack vs OpenSearch
 
 | 항목 | OpenSearch | LGP Stack (채택) |
@@ -240,6 +246,12 @@ def lambda_handler(event, context):
 
 - Athena 기반 로그 분석을 통해 **총 8건의 유효 차단 로그** 확보, 시스템 신뢰성 데이터로 검증
 - `pred_risk` 75.0 측정 시 70점 임계값 초과 → Pre-Mitigation 모드 정상 활성화 확인
+
+![403 Block](assets/403-block.png)
+
+![AIOps Dashboard](assets/aiops-dashboard.png)
+
+![Grafana Gauge](assets/grafana-gauge.png)
 
 ### 비용 구조
 
