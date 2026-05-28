@@ -3,27 +3,8 @@
 > 이커머스 환경의 실전 보안 위협을 막기 위해 설계한 **AWS 네이티브 기반 예측적 보안 자동화 시스템**  
 > CloudFront·WAF 엣지 방어 → Isolation Forest 이상 탐지 → SOAR 자동 대응으로 이어지는 완전 자동화 방어 체계
 
-[![Platform](https://img.shields.io/badge/Platform-AWS-orange?logo=amazon-aws)](https://aws.amazon.com)
-[![Python](https://img.shields.io/badge/Python-3.11-blue?logo=python)](https://python.org)
-[![ML](https://img.shields.io/badge/ML-Isolation_Forest-green)](https://scikit-learn.org)
-[![CloudWave](https://img.shields.io/badge/CloudWave-7기_4조-purple)](https://velog.io/@yapp)
-
 ---
 
-## 목차
-
-1. [프로젝트 배경 및 목적](#1-프로젝트-배경-및-목적)
-2. [전체 아키텍처](#2-전체-아키텍처)
-3. [Layer 1: Edge Defense](#3-layer-1-edge-defense)
-4. [Layer 2: Predictive AIOps](#4-layer-2-predictive-aiops)
-5. [Layer 3: SOAR Pipeline](#5-layer-3-soar-pipeline)
-6. [보안 성과 및 검증 결과](#6-보안-성과-및-검증-결과)
-7. [실전 트러블슈팅](#7-실전-트러블슈팅)
-8. [기술 스택 선택 근거](#8-기술-스택-선택-근거)
-9. [코어 파일 구성](#9-코어-파일-구성)
-10. [블로그 시리즈](#10-블로그-시리즈)
-
----
 
 ## 1. 프로젝트 배경 및 목적
 
@@ -384,4 +365,3 @@ pred_risk > 70 → premit_on = True (Pre-Mitigation 활성화)
 
 ---
 
-*© 2026 Minju Kim. 본 프로젝트의 아키텍처 설계와 핵심 로직 구현은 본인에게 소유권이 있습니다.*
