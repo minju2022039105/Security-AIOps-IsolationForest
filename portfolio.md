@@ -61,7 +61,7 @@ OpenSearch는 전용 클러스터 운영 비용이 높고 서버리스 연동이
 
 ## 4. Architecture
 
-![전체 아키텍처](https://github.com/user-attachments/assets/975e7f70-c9cc-43cb-b81d-8dd35cd06674)
+![전체 아키텍처](assets/architecture.png)
 
 전체 보안 파이프라인은 **차단 → 탐지 → 대응 → 시각화**의 폐루프 구조입니다. 각 계층은 S3 데이터 레이크를 공유 인터페이스로 연결되며, 차단된 공격 패턴이 모델 피드백으로 재투입되는 선순환 구조를 형성합니다.
 
