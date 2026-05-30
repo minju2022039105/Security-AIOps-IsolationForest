@@ -1,6 +1,6 @@
 # AWS 3-Layer Security AIOps Platform
 
-> 상세 내용 및 전체 코드: [GitHub README](https://github.com/minju2022039105/Security-AIOps-IsolationForest) · [Velog 시리즈](https://velog.io/@yapp/AIOps-%EB%B3%B4%EC%95%88-%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8-0-AWS-%EA%B8%B0%EB%B0%98-3-Layer-%EB%B3%B4%EC%95%88-%EC%9E%90%EB%8F%99%ED%99%94-%EC%95%84%ED%82%A4%ED%85%8D%EC%B2%98-%EC%84%A4%EA%B3%84)
+> 상세 내용 및 전체 코드: [GitHub README](https://github.com/minju2022039105/Security-AIOps-IsolationForest) · [Velog 시리즈](https://velog.io/@yapp/series/AIOps-%EB%B3%B4%EC%95%88-%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8)
 
 > CloudFront·WAF 엣지 방어 → Isolation Forest 60초 선행 탐지 → SOAR 자동 대응으로 이어지는 완전 자동화 보안 플랫폼  
 > 6인 팀 | 보안 파트 단독 담당 | 클라우드웨이브 7기 부트캠프 (2026.02)
